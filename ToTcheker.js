@@ -12,6 +12,6 @@ javascript:(function() {
   var reminingTime = totalTime - presantTime;
   var averageWorkTimes = reminingTime / reminingDays;
 
-  alert("今月の残労働基準時間は"+reminingTime+"時間です。残りの勤務日で平均"+averageWorkTimes+"時間働けば到達するよ！！残業時間±0で元気に月末を迎えような？？？");
+  alert("今月の残労働基準時間は"+reminingTime.toFixed(2)+"時間です。残りの勤務日で平均"+averageWorkTimes.toFixed(2)+"時間働けば到達するよ！！残業時間±0で元気に月末を迎えような？？？");
 
 })()
