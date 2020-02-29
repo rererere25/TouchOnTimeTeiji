@@ -15,9 +15,14 @@ javascript:(function() {
   let remainingHours = totalHours - currentHours;
   let averageWorkHours = remainingHours / remainingDays;
 
-  alert('今月の残労働基準時間は'
-    + remainingHours.toFixed(2)
-    + '時間です。残りの勤務日で平均'
-    + averageWorkHours.toFixed(2)
-    + '時間働けば到達するよ！！残業時間±0で元気に月末を迎えような？？？');
+  if (remainingHours > 1e-4) {
+    alert('今月の残労働基準時間は'
+          + remainingHours.toFixed(2)
+          + '時間です。残りの勤務日で平均'
+          + averageWorkHours.toFixed(2)
+          + '時間働けば到達するよ！！残業時間±0で元気に月末を迎えような？？？');
+  }
+  else {
+    alert('今月の労働基準時間を達成したよ！！やったね！！！');
+  }
 })()
